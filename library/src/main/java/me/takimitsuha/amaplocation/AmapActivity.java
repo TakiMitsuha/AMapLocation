@@ -9,7 +9,6 @@ import android.graphics.Color;
 import android.graphics.Point;
 import android.os.Bundle;
 import android.os.Handler;
-import android.support.v7.app.AppCompatActivity;
 import android.view.Gravity;
 import android.view.View;
 import android.view.ViewGroup;
@@ -47,7 +46,7 @@ import com.amap.api.services.geocoder.RegeocodeResult;
 /**
  * Created by Taki on 2017/2/4.
  */
-public class AmapActivity extends AppCompatActivity implements AMapLocationListener, AMap.OnCameraChangeListener, View.OnClickListener, LocationSource, OnGeocodeSearchListener {
+public class AmapActivity extends CheckPermissionsActivity implements AMapLocationListener, AMap.OnCameraChangeListener, View.OnClickListener, LocationSource, OnGeocodeSearchListener {
     private AMap mAMap;
     private MapView mMapView;
     private OnLocationChangedListener mOnLocationChangedListener;
